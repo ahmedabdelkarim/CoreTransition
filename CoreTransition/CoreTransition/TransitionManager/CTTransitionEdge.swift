@@ -2,7 +2,7 @@
 //  CTTransitionEdge.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 09/11/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import Foundation

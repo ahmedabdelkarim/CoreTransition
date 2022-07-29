@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ad3-lr-Rf4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="9Y0-KR-8v2">
+            <objects>
+                <viewController id="ad3-lr-Rf4" customClass="HomeViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WeO-P4-YFF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qRE-V0-rYj">
+                                <rect key="frame" x="24" y="68" width="366" height="770"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Yk9-sO-8ev">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="135"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2U-Ij-YYh" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Fade"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="fade"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDQ-el-ayT" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Zoom"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="zoom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="h9Z-sg-cOM">
+                                        <rect key="frame" x="0.0" y="159" width="366" height="134.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8r-iS-OCp" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="134.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Cover"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="cover"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zix-cE-fox" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="171" height="134.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Slide"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="slide"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="dpD-B6-EN4">
+                                        <rect key="frame" x="0.0" y="317.5" width="366" height="135"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Da-n5H" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Curtain"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="curtain"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVx-4J-P2f" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Curtain Zoom"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="curtain-zoom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-Fs-CKp">
+                                        <rect key="frame" x="0.0" y="476.5" width="366" height="134.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-NJ-Jdt" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="134.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Door"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="door"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-YW-rkS" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="171" height="134.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Window"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="window"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-wn-PLv">
+                                        <rect key="frame" x="0.0" y="635" width="366" height="135"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QD-0N-8GU" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Puzzle Board"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="puzzle-board"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4Y-r5-xv6" customClass="CardView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="171" height="135"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Morph"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="morph"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IaB-Rd-jIf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IaB-Rd-jIf" firstAttribute="trailing" secondItem="qRE-V0-rYj" secondAttribute="trailing" constant="24" id="607-Sy-sMu"/>
+                            <constraint firstItem="qRE-V0-rYj" firstAttribute="leading" secondItem="IaB-Rd-jIf" secondAttribute="leading" constant="24" id="M3V-5e-vUh"/>
+                            <constraint firstItem="qRE-V0-rYj" firstAttribute="top" secondItem="IaB-Rd-jIf" secondAttribute="top" constant="24" id="Ow8-kt-YLc"/>
+                            <constraint firstItem="IaB-Rd-jIf" firstAttribute="bottom" secondItem="qRE-V0-rYj" secondAttribute="bottom" constant="24" id="o0L-Qf-y7C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverCard" destination="i8r-iS-OCp" id="pnQ-qW-FrF"/>
+                        <outlet property="curtainCard" destination="hJ8-Da-n5H" id="G6r-Ig-DZi"/>
+                        <outlet property="curtainZoomCard" destination="JVx-4J-P2f" id="4jM-K9-NEX"/>
+                        <outlet property="doorCard" destination="RDZ-NJ-Jdt" id="rZo-P5-AjU"/>
+                        <outlet property="fadeCard" destination="X2U-Ij-YYh" id="zGT-rg-1WJ"/>
+                        <outlet property="morphCard" destination="z4Y-r5-xv6" id="2P9-eU-JbN"/>
+                        <outlet property="puzzleBoardCard" destination="8QD-0N-8GU" id="54e-Ej-DTI"/>
+                        <outlet property="slideCard" destination="zix-cE-fox" id="nzO-2T-9zO"/>
+                        <outlet property="windowCard" destination="G6z-YW-rkS" id="rNu-kp-VYK"/>
+                        <outlet property="zoomCard" destination="QDQ-el-ayT" id="wfW-o5-1ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7x1-RQ-KzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-642"/>
+        </scene>
+        <!--Presenting View Controller-->
+        <scene sceneID="XS7-XN-iO2">
+            <objects>
+                <viewController storyboardIdentifier="PresentingViewController" id="eje-Kh-h18" customClass="PresentingViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzL-c5-w9V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RqC-Co-2P3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-Vf-VYj">
+                                <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsf-GB-7RR" userLabel="Dismiss">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" ">
+                                            <imageReference key="image" image="chevron.down" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25" scale="large" weight="medium"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="dismiss:" destination="eje-Kh-h18" eventType="touchUpInside" id="p02-Fs-7s0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vsf-GB-7RR" secondAttribute="trailing" id="Anr-jg-Zei"/>
+                                    <constraint firstItem="Vsf-GB-7RR" firstAttribute="top" secondItem="7nf-Vf-VYj" secondAttribute="top" id="ZYW-Ky-f6N"/>
+                                    <constraint firstAttribute="height" constant="90" id="kdD-vr-ldm"/>
+                                    <constraint firstItem="Vsf-GB-7RR" firstAttribute="leading" secondItem="7nf-Vf-VYj" secondAttribute="leading" id="uaT-XG-eOD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zZz-uH-iSA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RqC-Co-2P3" firstAttribute="leading" secondItem="zZz-uH-iSA" secondAttribute="leading" id="4jA-IE-7o8"/>
+                            <constraint firstAttribute="bottom" secondItem="7nf-Vf-VYj" secondAttribute="bottom" id="JwX-AI-sGX"/>
+                            <constraint firstItem="RqC-Co-2P3" firstAttribute="top" secondItem="zZz-uH-iSA" secondAttribute="top" placeholder="YES" id="M8r-OP-Qme"/>
+                            <constraint firstItem="RqC-Co-2P3" firstAttribute="centerY" secondItem="zZz-uH-iSA" secondAttribute="centerY" id="OVD-J1-Rrk"/>
+                            <constraint firstItem="7nf-Vf-VYj" firstAttribute="leading" secondItem="mzL-c5-w9V" secondAttribute="leading" id="fHe-XJ-rw8"/>
+                            <constraint firstItem="zZz-uH-iSA" firstAttribute="trailing" secondItem="RqC-Co-2P3" secondAttribute="trailing" id="i5f-sl-pSL"/>
+                            <constraint firstItem="zZz-uH-iSA" firstAttribute="bottom" secondItem="RqC-Co-2P3" secondAttribute="bottom" placeholder="YES" id="mA0-wp-Cjw"/>
+                            <constraint firstAttribute="trailing" secondItem="7nf-Vf-VYj" secondAttribute="trailing" id="xbw-EW-WvD"/>
+                            <constraint firstItem="Vsf-GB-7RR" firstAttribute="bottom" secondItem="zZz-uH-iSA" secondAttribute="bottom" id="zV9-c1-hJq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="RqC-Co-2P3" id="RES-gd-2JG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6p-1O-mOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.6666666666667" y="-642.1875"/>
+        </scene>
+        <!--Presented View Controller-->
+        <scene sceneID="sYH-48-4zj">
+            <objects>
+                <viewController storyboardIdentifier="PresentedViewController" id="E2T-DT-8Wd" customClass="PresentedViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pn-tF-w2v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxE-oc-M6f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-Pv-ycF">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKJ-v3-bBN">
+                                                <rect key="frame" x="48" y="13.5" width="318" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OKJ-v3-bBN" secondAttribute="trailing" constant="48" id="JWT-qY-SHt"/>
+                                            <constraint firstItem="OKJ-v3-bBN" firstAttribute="leading" secondItem="eCP-Pv-ycF" secondAttribute="leading" constant="48" id="hR6-aD-sbn"/>
+                                            <constraint firstItem="OKJ-v3-bBN" firstAttribute="centerY" secondItem="eCP-Pv-ycF" secondAttribute="centerY" id="ogo-KV-2XR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eCP-Pv-ycF" secondAttribute="bottom" id="PTn-LV-vkm"/>
+                                    <constraint firstAttribute="trailing" secondItem="eCP-Pv-ycF" secondAttribute="trailing" id="bjY-Hc-20b"/>
+                                    <constraint firstItem="eCP-Pv-ycF" firstAttribute="leading" secondItem="NxE-oc-M6f" secondAttribute="leading" id="cDK-Le-iKx"/>
+                                    <constraint firstAttribute="height" constant="100" id="rK5-7v-rgA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-8X-zeo">
+                                <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNf-ro-KoG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzW-OH-gfP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Dismiss">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="dismiss:" destination="E2T-DT-8Wd" eventType="touchUpInside" id="wSL-uN-wJ2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hzW-OH-gfP" firstAttribute="top" secondItem="UNf-ro-KoG" secondAttribute="top" id="AkK-4f-m9j"/>
+                                            <constraint firstItem="hzW-OH-gfP" firstAttribute="leading" secondItem="UNf-ro-KoG" secondAttribute="leading" id="FOZ-qq-G6R"/>
+                                            <constraint firstAttribute="trailing" secondItem="hzW-OH-gfP" secondAttribute="trailing" id="bJT-Uf-2yD"/>
+                                            <constraint firstAttribute="bottom" secondItem="hzW-OH-gfP" secondAttribute="bottom" id="e8h-v1-1wq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="UNf-ro-KoG" firstAttribute="leading" secondItem="y8y-8X-zeo" secondAttribute="leading" id="Dvg-xB-fNt"/>
+                                    <constraint firstAttribute="height" constant="90" id="nFR-Kf-j9U"/>
+                                    <constraint firstItem="UNf-ro-KoG" firstAttribute="top" secondItem="y8y-8X-zeo" secondAttribute="top" id="vXT-zR-JMF"/>
+                                    <constraint firstAttribute="trailing" secondItem="UNf-ro-KoG" secondAttribute="trailing" id="yYn-Ct-rSa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition Style" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rag-Df-i3T">
+                                <rect key="frame" x="48" y="436" width="318" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R25-y2-nDk"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y8y-8X-zeo" secondAttribute="trailing" id="4gP-Nl-FvE"/>
+                            <constraint firstAttribute="bottom" secondItem="y8y-8X-zeo" secondAttribute="bottom" id="75P-lS-cwB"/>
+                            <constraint firstAttribute="trailing" secondItem="NxE-oc-M6f" secondAttribute="trailing" id="BlA-8Z-4TQ"/>
+                            <constraint firstItem="rag-Df-i3T" firstAttribute="centerY" secondItem="8pn-tF-w2v" secondAttribute="centerY" id="Dx6-5R-iG5"/>
+                            <constraint firstItem="NxE-oc-M6f" firstAttribute="top" secondItem="8pn-tF-w2v" secondAttribute="top" id="HMV-yf-BsR"/>
+                            <constraint firstItem="NxE-oc-M6f" firstAttribute="leading" secondItem="8pn-tF-w2v" secondAttribute="leading" id="L2O-xZ-wKa"/>
+                            <constraint firstItem="rag-Df-i3T" firstAttribute="centerX" secondItem="8pn-tF-w2v" secondAttribute="centerX" id="fUA-PJ-Yf0"/>
+                            <constraint firstItem="R25-y2-nDk" firstAttribute="top" secondItem="eCP-Pv-ycF" secondAttribute="top" id="gMb-Ay-ndE"/>
+                            <constraint firstItem="UNf-ro-KoG" firstAttribute="bottom" secondItem="R25-y2-nDk" secondAttribute="bottom" id="gjW-Vj-YlK"/>
+                            <constraint firstItem="rag-Df-i3T" firstAttribute="leading" secondItem="8pn-tF-w2v" secondAttribute="leading" constant="48" id="i8Z-c9-O3c"/>
+                            <constraint firstAttribute="trailing" secondItem="rag-Df-i3T" secondAttribute="trailing" constant="48" id="jLU-23-gpC"/>
+                            <constraint firstItem="y8y-8X-zeo" firstAttribute="leading" secondItem="8pn-tF-w2v" secondAttribute="leading" id="xwV-zo-CbD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="rag-Df-i3T" id="Egk-Kv-sf8"/>
+                        <outlet property="descriptionLeadingConstraint" destination="i8Z-c9-O3c" id="PM3-Tz-L9R"/>
+                        <outlet property="descriptionTrailingConstraint" destination="jLU-23-gpC" id="tOI-qV-eNO"/>
+                        <outlet property="dismissButton" destination="hzW-OH-gfP" id="Qbd-zQ-5s6"/>
+                        <outlet property="titleLabel" destination="OKJ-v3-bBN" id="UkM-I1-xX6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdA-51-Vdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="-642"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemIndigoColor"/>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="cover" width="100" height="100"/>
+        <image name="curtain" width="100" height="100"/>
+        <image name="curtain-zoom" width="100" height="100"/>
+        <image name="door" width="100" height="100"/>
+        <image name="fade" width="100" height="100"/>
+        <image name="morph" width="100" height="100"/>
+        <image name="puzzle-board" width="100" height="100"/>
+        <image name="slide" width="100" height="100"/>
+        <image name="window" width="100" height="100"/>
+        <image name="zoom" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

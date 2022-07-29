@@ -2,7 +2,7 @@
 //  CoreTransition.h
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 31/10/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 #import <Foundation/Foundation.h>

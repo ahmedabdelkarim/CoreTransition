@@ -2,7 +2,7 @@
 //  CurtainZoomDismissTransition.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 06/11/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import UIKit

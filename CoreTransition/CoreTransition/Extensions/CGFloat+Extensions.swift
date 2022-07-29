@@ -2,7 +2,7 @@
 //  CGFloat+Extensions.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 19/11/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import UIKit

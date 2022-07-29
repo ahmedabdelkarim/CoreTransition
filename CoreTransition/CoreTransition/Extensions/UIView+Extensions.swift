@@ -2,7 +2,7 @@
 //  UIView+Extensions.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 26/10/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import UIKit

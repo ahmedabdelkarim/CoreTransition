@@ -2,7 +2,7 @@
 //  PuzzleBoardDismissTransition.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 18/11/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import UIKit

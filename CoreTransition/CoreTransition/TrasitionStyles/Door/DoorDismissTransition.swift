@@ -2,7 +2,7 @@
 //  DoorDismissTransition.swift
 //  CoreTransition
 //
-//  Created by Ahmed Abdelkarim on 30/10/2021.
+//  Created by Ahmed Abdelkarim.
 //
 
 import UIKit

@@ -14,6 +14,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/ahmedabdelkarim/CoreTransition.git", :tag => spec.version.to_s }
 
-  spec.source_files  = "CoreTransition.git/**/*.{swift}"
+  spec.source_files  = "CoreTransition/**/*.{swift}"
  
 end
