@@ -1,2 +1,61 @@
 # CoreTransition
 iOS framework for impressive transition animations between views. Built using Swift, and supports a lot of animations to navigate to a view or back to the first view.
+
+# Video Demo
+
+https://user-images.githubusercontent.com/8017394/181863182-988404a1-6f16-4938-8ded-1ad347271434.MP4
+
+# Supported Transitions
+* Fade
+* Zoom
+* Cover
+* Slide
+* Curtain
+* Curtain Zoom
+* Door
+* Window
+* Puzzle Board
+* Morph
+
+# Prerequisites
+* macOS Big Sur, or later
+* Xcode 12.3+
+* Simulator or iPhone device with iOS 14.3+
+
+# Install CoreTransition (using CocoaPods)
+1. Make sure you have CocoaPods installed.
+2. Update local pod repo using command `pod repo update` or `pod repo update trunk`.
+3. Open Terminal from your project folder, and run commad `pod init`.
+4. Add `pod 'CoreTransition'` inside Podfile, and run `pod install`.
+
+# Code Example
+```swift
+import UIKit
+import CoreTransition
+
+class ViewController: UIViewController {
+    // MARK: - Properties
+    let transitionManager = CTTransitionManager()
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Present the other view wherever suitable in code
+        applyTransition()
+    }
+    
+    // MARK: - Methods
+    func applyTransition() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PresentedViewController") as! PresentedViewController
+        
+        // Present vc with fade transition animation
+        // Change style and duration to get another awesome transition
+        transitionManager.transition(from: self, to: vc, style: .fade, duration: 1)
+    }
+}
+```
