@@ -1,6 +1,11 @@
 # CoreTransition
 iOS framework for impressive transition animations between views. Built using Swift, and supports a lot of animations to navigate to a view or back to the first view.
 
+[![license](https://img.shields.io/badge/license-MIT-black)](https://github.com/ahmedabdelkarim/CoreTransition)
+[![Xcode Version](https://img.shields.io/badge/Xcode-12.3%2B-blue)](https://github.com/ahmedabdelkarim/CoreTransition)
+[![iOS Version](https://img.shields.io/badge/iOS-14.3%2B-blue)](https://github.com/ahmedabdelkarim/CoreTransition)
+[![Swift Version](https://img.shields.io/badge/Swift-5.0%2B-orange)](https://github.com/ahmedabdelkarim/CoreTransition)
+
 # Video Demo
 
 https://user-images.githubusercontent.com/8017394/181863182-988404a1-6f16-4938-8ded-1ad347271434.MP4
