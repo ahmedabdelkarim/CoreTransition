@@ -32,6 +32,7 @@ https://user-images.githubusercontent.com/8017394/181863182-988404a1-6f16-4938-8
 2. Update local pod repo using command `pod repo update` or `pod repo update trunk`.
 3. Open Terminal from your project folder, and run commad `pod init`.
 4. Add `pod 'CoreTransition'` inside Podfile, and run `pod install`.
+5. Use the framework like the code below, and call `dismiss(animated: true)` in the preseted view.
 
 # Code Example
 ```swift
