@@ -21,6 +21,7 @@ https://user-images.githubusercontent.com/8017394/181863182-988404a1-6f16-4938-8
 * Window
 * Puzzle Board
 * Morph
+* Matched Morph (In progress)
 
 # Prerequisites
 * macOS Big Sur, or later
@@ -64,4 +65,10 @@ class ViewController: UIViewController {
         transitionManager.transition(from: self, to: vc, style: .fade, duration: 1)
     }
 }
+```
+
+To present a `UIViewController` using one of supported transitions but dismiss it in your own way, call transition with inline object of `CTTransitionManager` like this:
+
+```swift
+CTTransitionManager().transition(from: self, to: vc, style: .fade)
 ```
