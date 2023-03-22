@@ -13,12 +13,17 @@ class FadePresentTransition: CTTransition {
         let transitionContainer = transitionContext.containerView
         
         // get required views
-        guard let presentedView = transitionContext.getPresentedView()
+        guard let presentingVC = transitionContext.getPresentingViewController(),
+              let presentedView = transitionContext.getPresentedView()
         else {
             return UIViewPropertyAnimator.empty
         }
         
+        // calculate animation values
+        let presentingViewInitialFrame = transitionContext.initialFrame(for: presentingVC)
+        
         // set initial values
+        presentedView.frame = presentingViewInitialFrame
         presentedView.alpha = 0
         
         // add presentedView in transition container

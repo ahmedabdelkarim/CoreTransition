@@ -10,7 +10,8 @@ import UIKit
 class PuzzleBoardPresentTransition: CTTransition {
     override func buildAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
         // get required views
-        guard let presentingView = transitionContext.getPresentingView(),
+        guard let presentingVC = transitionContext.getPresentingViewController(),
+              let presentingView = transitionContext.getPresentingView(),
               let presentedView = transitionContext.getPresentedView()
         else {
             return UIViewPropertyAnimator.empty
@@ -22,6 +23,12 @@ class PuzzleBoardPresentTransition: CTTransition {
         let translateMaxX =  presentingView.frame.width + minDimension
         let translateMinY =  -minDimension
         let translateMaxY =  presentingView.frame.height + minDimension
+        
+        // calculate animation values
+        let presentingViewInitialFrame = transitionContext.initialFrame(for: presentingVC)
+        
+        // set initial values
+        presentedView.frame = presentingViewInitialFrame
         
         // add presentedView
         let transitionContainer = transitionContext.containerView

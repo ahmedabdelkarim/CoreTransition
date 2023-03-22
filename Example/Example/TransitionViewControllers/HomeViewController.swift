@@ -148,7 +148,6 @@ class HomeViewController: UIViewController {
     func morph(_ view: CardView) {
         let transitions = [
             Transition(name: "Morph View 1", description: "Morph View 1", icon: nil, background: .systemIndigo, borderColor: .systemIndigo, titleColor: .white, cornerRadius: 0, style: nil, duration: 1, size: CGSize(width: 280, height: 120)),
-            Transition(name: "Morph View 2", description: "Morph View 2", icon: nil, background: .orange, borderColor: .orange, titleColor: .white, cornerRadius: 15, style: nil, duration: 1.5, size: CGSize(width: 280, height: 120)),
             Transition(name: "Morph View 3", description: "Morph View 3", icon: nil, background: .systemPink, borderColor: .systemPink, titleColor: .white, cornerRadius: 30, style: nil, duration: 2, size: CGSize(width: 280, height: 120)),
             Transition(name: "Morph View 4", description: "Morph View 4", icon: nil, background: .black, borderColor: .black, titleColor: .white, cornerRadius: 75, style: nil, duration: 2.5, size: CGSize(width: 150, height: 150))
         ]

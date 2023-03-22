@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="Example" customModuleProvider="target">
+            <connections>
+                <outlet property="dimView" destination="vnB-he-faR" id="gN2-v7-GOk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-he-faR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.44551348005022323" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-3V-SjT">
+                    <rect key="frame" x="62" y="375.5" width="290" height="155"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVk-xZ-Epx">
+                            <rect key="frame" x="108" y="43.5" width="74.5" height="68.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uy-b4-Otq">
+                                    <rect key="frame" x="16.5" y="0.0" width="41.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-uV-1r9">
+                                    <rect key="frame" x="0.0" y="37.5" width="74.5" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
+                                    <connections>
+                                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="5Yw-fV-viY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tVk-xZ-Epx" firstAttribute="centerY" secondItem="Msh-3V-SjT" secondAttribute="centerY" id="BUt-bS-JvB"/>
+                        <constraint firstAttribute="width" secondItem="Msh-3V-SjT" secondAttribute="height" multiplier="15:8" id="dbw-VG-nvd"/>
+                        <constraint firstItem="tVk-xZ-Epx" firstAttribute="centerX" secondItem="Msh-3V-SjT" secondAttribute="centerX" id="vTJ-Xb-4SS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vnB-he-faR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3fw-xM-2zO"/>
+                <constraint firstItem="Msh-3V-SjT" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="3ll-cf-0QE"/>
+                <constraint firstItem="Msh-3V-SjT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B6K-gc-btE"/>
+                <constraint firstAttribute="bottom" secondItem="vnB-he-faR" secondAttribute="bottom" id="Un3-5y-atH"/>
+                <constraint firstAttribute="trailing" secondItem="vnB-he-faR" secondAttribute="trailing" id="fG6-0a-bIk"/>
+                <constraint firstItem="Msh-3V-SjT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="mBb-kc-bfp"/>
+                <constraint firstItem="vnB-he-faR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xxO-PS-EkV"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

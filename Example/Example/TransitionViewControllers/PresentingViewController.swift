@@ -11,6 +11,9 @@ import CoreTransition
 class PresentingViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var infoButton: UIButton!
+    
+    @IBOutlet weak var titleLabel: UILabel!// temp
     
     // MARK: - Properties
     var transitions: [Transition]?
@@ -21,6 +24,8 @@ class PresentingViewController: UIViewController {
         super.viewDidLoad()
         
         showTransitions()
+        
+        self.titleLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)// temp
     }
     
     // MARK: - Methods
@@ -111,4 +116,38 @@ class PresentingViewController: UIViewController {
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func infoButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Morph", message: "Description...", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
+            alert.dismiss(animated: true)
+        }))
+        
+        //self.providesPresentationContextTransitionStyle = true
+        
+        alert.modalPresentationStyle = .custom
+        
+        //alert.definesPresentationContext = true
+        
+        alert.view.backgroundColor = .cyan
+        
+        
+        //present(alert, animated: false)
+        
+        let al = AlertViewController()
+        
+        infoButton.layer.cornerRadius = 10.5
+        
+        transitionManager.transition(from: self, to: al, style: .morph(originView: infoButton))
+    }
+    
+    @IBOutlet weak var cardview: UIView!
+    
+    @IBAction func viewTap(_ sender: Any) {
+        let vc = CardViewController()
+        
+        transitionManager.transition(from: self, to: vc, style: .morph(originView: cardview), duration: 1)
+    }
+    
 }

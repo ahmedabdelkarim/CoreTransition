@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7F943AA5C4511F006F847F15 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D87132093BF8519D8BC007 /* Pods_Example.framework */; };
+		F53EAE86289F1CC600F974FA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EAE84289F1CC600F974FA /* CardViewController.swift */; };
+		F53EAE87289F1CC600F974FA /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53EAE85289F1CC600F974FA /* CardViewController.xib */; };
 		F541F5802721753C00004E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541F57F2721753C00004E14 /* AppDelegate.swift */; };
 		F541F5822721753C00004E14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541F5812721753C00004E14 /* SceneDelegate.swift */; };
 		F541F5872721753C00004E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F541F5852721753C00004E14 /* Main.storyboard */; };
 		F541F5892721753D00004E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F541F5882721753D00004E14 /* Assets.xcassets */; };
 		F541F58C2721753D00004E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F541F58A2721753D00004E14 /* LaunchScreen.storyboard */; };
+		F57BDCB4289DC8EA004B7666 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BDCB2289DC8EA004B7666 /* AlertViewController.swift */; };
+		F57BDCB5289DC8EA004B7666 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57BDCB3289DC8EA004B7666 /* AlertViewController.xib */; };
 		F57FF1662748341800203A9C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FF1652748341800203A9C /* CardView.swift */; };
 		F57FF16A2748353E00203A9C /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FF1692748353E00203A9C /* NibView.swift */; };
 		F57FF16C2748356200203A9C /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57FF16B2748356200203A9C /* CardView.xib */; };
@@ -26,6 +30,8 @@
 		08BC2EB2DF4D75E1AAF1B156 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		C7D87132093BF8519D8BC007 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50CB4212889DA5000E6F48A /* CoreTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53EAE84289F1CC600F974FA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		F53EAE85289F1CC600F974FA /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		F541F57C2721753C00004E14 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F541F57F2721753C00004E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F541F5812721753C00004E14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		F541F5882721753D00004E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F541F58B2721753D00004E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F541F58D2721753D00004E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57BDCB2289DC8EA004B7666 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		F57BDCB3289DC8EA004B7666 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		F57FF1652748341800203A9C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F57FF1692748353E00203A9C /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		F57FF16B2748356200203A9C /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
@@ -95,6 +103,10 @@
 				F541F5882721753D00004E14 /* Assets.xcassets */,
 				F541F58A2721753D00004E14 /* LaunchScreen.storyboard */,
 				F541F58D2721753D00004E14 /* Info.plist */,
+				F57BDCB2289DC8EA004B7666 /* AlertViewController.swift */,
+				F57BDCB3289DC8EA004B7666 /* AlertViewController.xib */,
+				F53EAE84289F1CC600F974FA /* CardViewController.swift */,
+				F53EAE85289F1CC600F974FA /* CardViewController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -206,8 +218,10 @@
 			files = (
 				F541F58C2721753D00004E14 /* LaunchScreen.storyboard in Resources */,
 				F57FF16C2748356200203A9C /* CardView.xib in Resources */,
+				F53EAE87289F1CC600F974FA /* CardViewController.xib in Resources */,
 				F541F5892721753D00004E14 /* Assets.xcassets in Resources */,
 				F541F5872721753C00004E14 /* Main.storyboard in Resources */,
+				F57BDCB5289DC8EA004B7666 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +278,11 @@
 				F5978097288D8F240094D999 /* Transition.swift in Sources */,
 				F5978099288D94F80094D999 /* HomeViewController.swift in Sources */,
 				F541F5802721753C00004E14 /* AppDelegate.swift in Sources */,
+				F57BDCB4289DC8EA004B7666 /* AlertViewController.swift in Sources */,
 				F57FF16A2748353E00203A9C /* NibView.swift in Sources */,
 				F57FF1662748341800203A9C /* CardView.swift in Sources */,
 				F541F5822721753C00004E14 /* SceneDelegate.swift in Sources */,
+				F53EAE86289F1CC600F974FA /* CardViewController.swift in Sources */,
 				F5978093288D7F470094D999 /* PresentingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,6 +64,7 @@ class DoorPresentTransition: CTTransition {
         }
         
         // set initial values
+        presentedView.frame = presentingViewInitialFrame
         imageView.frame = imageViewInitialFrame
         
         presentingView.alpha = 0

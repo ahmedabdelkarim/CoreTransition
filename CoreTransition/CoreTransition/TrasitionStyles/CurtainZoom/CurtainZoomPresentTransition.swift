@@ -19,7 +19,8 @@ class CurtainZoomPresentTransition: CTTransition {
         let transitionContainer = transitionContext.containerView
         
         // get required views
-        guard let presentingView = transitionContext.getPresentingView(),
+        guard let presentingVC = transitionContext.getPresentingViewController(),
+              let presentingView = transitionContext.getPresentingView(),
               let presentedView = transitionContext.getPresentedView()
         else {
             return UIViewPropertyAnimator.empty
@@ -32,6 +33,7 @@ class CurtainZoomPresentTransition: CTTransition {
         let secondImageView = UIImageView(image: secondHalfImage)
         
         // calculate animation values
+        let presentingViewInitialFrame = transitionContext.initialFrame(for: presentingVC)
         let firstImageViewInitialFrame = firstHalfFrame
         var firstImageViewFinalTransform = firstImageView.transform
         switch orientation {
@@ -51,6 +53,7 @@ class CurtainZoomPresentTransition: CTTransition {
         }
         
         // set initial values
+        presentedView.frame = presentingViewInitialFrame
         firstImageView.frame = firstImageViewInitialFrame
         secondImageView.frame = secondImageViewInitialFrame
         presentedView.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)

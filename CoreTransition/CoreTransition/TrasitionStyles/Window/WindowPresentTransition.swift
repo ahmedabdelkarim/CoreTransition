@@ -19,7 +19,8 @@ class WindowPresentTransition: CTTransition {
     
     override func buildAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
         // get required views
-        guard let presentingView = transitionContext.getPresentingView(),
+        guard let presentingVC = transitionContext.getPresentingViewController(),
+              let presentingView = transitionContext.getPresentingView(),
               let presentedView = transitionContext.getPresentedView()
         else {
             return UIViewPropertyAnimator.empty
@@ -32,6 +33,7 @@ class WindowPresentTransition: CTTransition {
         let secondImageView = UIImageView(image: secondHalfImage)
         
         // calculate animation values
+        let presentingViewInitialFrame = transitionContext.initialFrame(for: presentingVC)
         let firstImageViewInitialFrame = firstHalfFrame
         var firstRotationTransform = CATransform3DIdentity
         switch orientation {
@@ -67,6 +69,7 @@ class WindowPresentTransition: CTTransition {
         }
         
         // set initial values
+        presentedView.frame = presentingViewInitialFrame
         firstImageView.frame = firstImageViewInitialFrame
         secondImageView.frame = secondImageViewInitialFrame
         
